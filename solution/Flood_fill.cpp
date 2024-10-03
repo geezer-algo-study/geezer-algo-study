@@ -1,3 +1,5 @@
+
+
 class Solution {
 public:
     int precolor, ny, nx,n,m;
