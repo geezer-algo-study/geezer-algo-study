@@ -1,0 +1,9 @@
+
+            while(node != nullptr){
+                if(node->right){
+                    
+                }
+                else if(){
+
+                }
+            }
