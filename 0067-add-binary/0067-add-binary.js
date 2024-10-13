@@ -21,10 +21,9 @@ var addBinary = function(a, b) {
         if(temp == 2 || temp == 3) {
             carry = 1;
         }
-    }
-    
-    if(carry == 1) {
-        result = "1" + result;
+        if(i == len - 1 && carry == 1) {
+            result = "1" + result;
+        }
     }
 
     return result;
