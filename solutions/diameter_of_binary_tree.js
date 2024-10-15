@@ -16,5 +16,6 @@ var diameterOfBinaryTree = function (root) {
   if (root.length === 0) {
     return 0;
   } else {
+    //좌우 길이 측정 실패
   }
 };
