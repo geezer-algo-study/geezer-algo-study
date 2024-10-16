@@ -16,15 +16,15 @@ var maxDepth = function (root) {
 	let max = 0;
 
 	const dfs = (node) => {
-		if (node.left != null) lLength = dfs(node.left);
-		if (node.right != null) rLength = dfs(node.right);
+		if (node.left != null) lLength = dfs(node.left); // 왼쪽 노드 길이 보관
+		if (node.right != null) rLength = dfs(node.right); // 오른쪽 노드 길이 보관
 
-		max = Math.max(lLength, rLength);
+		max = Math.max(lLength, rLength); // 길이 비교
 
-		return 1 + max;
+		return 1 + max; // 1씩 길이 추가
 	};
 
 	dfs(root);
 
-	return max + 1;
+	return max + 1; // root 노드를 더한 최대 길이
 };
