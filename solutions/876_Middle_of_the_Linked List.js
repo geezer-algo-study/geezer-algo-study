@@ -65,7 +65,7 @@ var middleNode = function (head) {
 			nodeFaster = nodeFaster.next;
 		} else {
 			// stackFaster에 더 이상 추가할 노드가 없다는 건 마지막 노드라는 뜻이므로
-			// stackFaster의 절반 만큼만 노드를 추가한 stackSlower의 절반 위치의 노드를 반환
+			// stackFaster의 절반 만큼만 노드를 추가한 stackSlower의 절반 위치의 노드를 반환하기
 			nodeSlower = stackSlower[stackSlower.length - 1];
 			break;
 		}
